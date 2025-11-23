@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AWS Outage Details</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Detailed Incident Report</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="details.html" class="active">Details</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>What Happened</h2>
+      <p>
+        According to AWS’s post-incident summary, a network configuration
+        change in us-east-1 propagated incorrectly to backbone routers.
+        The update caused packet loss between core services and led to
+        cascading failures across several regions.
+      </p>
+
+      <h2>Impact</h2>
+      <p>
+        Many major platforms—streaming services, retail sites, and
+        educational tools—experienced downtime. Internal dashboards,
+        billing APIs, and the AWS Management Console were intermittently
+        unavailable.
+      </p>
+
+      <h2>Lessons Learned</h2>
+      <ul>
+        <li>Implement multi-region failover for critical workloads.</li>
+        <li>Maintain independent DNS and status monitoring tools.</li>
+        <li>Review change-management and rollback procedures.</li>
+        <li>Communicate transparently during incidents.</li>
+      </ul>
+
+      <p><a href="index.html" class="button">⬅ Back to Home</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <p>Information based on public AWS status reports (educational use only).</p>
+  </footer>
+</body>
+</html>
