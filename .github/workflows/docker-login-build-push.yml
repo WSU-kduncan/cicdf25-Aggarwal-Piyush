@@ -22,7 +22,9 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t 26piyush/aws-outage-site:${{ github.ref_name }} ./Project5
+           docker build -t 26piyush/aws-outage-site:latest ./Project5
 
       - name: Push Docker image
         run: |
           docker push 26piyush/aws-outage-site:${{ github.ref_name }}
+          docker push 26piyush/aws-outage-site:latest
