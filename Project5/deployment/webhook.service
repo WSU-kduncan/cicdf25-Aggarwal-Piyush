@@ -1,0 +1,12 @@
+[Unit]
+Description=Small server for creating HTTP endpoints (hooks)
+Documentation=https://github.com/adnanh/webhook/
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/webhook -hooks '/mnt/d/SCHOOL/Fall 25/CEG 3120 Design IT/ceg3120f25-Aggarwal-Piyush/project5/deployment/hooks.json' -verbose -port 9000
+WorkingDirectory='/mnt/d/SCHOOL/Fall 25/CEG 3120 Design IT/ceg3120f25-Aggarwal-Piyush/project5/deployment'
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
