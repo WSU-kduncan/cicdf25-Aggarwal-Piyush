@@ -148,13 +148,10 @@ webhook URL: http://54.165.215.255:9000/hooks/refresh-site
   - **BashScript** - to write `refresh-container.sh` it stops old containers, pulls latest image and starts new container
   - **Docker** - what runs the application as containers 
   - **DockerHub** - stores docker images 
-  - **Webhook** - listesn for incoming payloads and triggers refresh-container.sh
-
-- **Diagram of project**  
-![Continuous Deployment Diagram](web-content/Screenshots/CD.png)
+  - **Webhook** - listen for incoming payloads and triggers refresh-container.sh
 
 - **What is NOT WORKING in this project**
-
+The pipeline from local computer to github is struggling
 
 
 
@@ -164,4 +161,5 @@ webhook URL: http://54.165.215.255:9000/hooks/refresh-site
 - I prmpoted ChatGPT to give me a better CSS for my web, something that's appealing but easy on the eye. 
 
 - I used this `https://github.com/adnanh/webhook` and the lecture videos in Pilot to get and idea of how to write hooks. 
+
 
