@@ -2,7 +2,7 @@
 
 CONTAINER_NAME="site"
 
-IMAGE_NAME="26piyush/aws-outage-site:v1"
+IMAGE_NAME="26piyush/aws-outage-site:v2"
 
 sudo docker stop $CONTAINER_NAME
 sudo docker rm $CONTAINER_NAME

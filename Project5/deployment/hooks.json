@@ -1,8 +1,8 @@
 [
     {
         "id": "refresh-site", 
-        "execute-command": "/mnt/d/SCHOOL/Fall 25/CEG 3120 Design IT/ceg3120f25-Aggarwal-Piyush/project5/deployment/refresh-container.sh",
-        "command-working-directory": "/mnt/d/SCHOOL/Fall 25/CEG 3120 Design IT/ceg3120f25-Aggarwal-Piyush/project5/deployment",
+        "execute-command": "/home/ubuntu/deployment/refresh-container.sh",
+        "command-working-directory": "/home/ubuntu/deployment",
         "response-message": "Refreshing website",
         
         "trigger-rule":
