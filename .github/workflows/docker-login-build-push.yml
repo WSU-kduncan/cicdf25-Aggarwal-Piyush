@@ -3,7 +3,7 @@ name: Docker-Login-Build-Push
 on:
   push:
     tags:
-      - "v*"
+      - "v*.*.*"
 
 jobs:
   build-and-push:
