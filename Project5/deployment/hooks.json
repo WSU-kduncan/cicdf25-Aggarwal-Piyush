@@ -10,7 +10,7 @@
             "match": 
             {
                 "type": "value",
-                "value": "26piyush/aws-outage-site:latest",
+                "value": "26piyush/aws-outage-site",
                 "parameter": 
                 {
                     "source": "payload",
