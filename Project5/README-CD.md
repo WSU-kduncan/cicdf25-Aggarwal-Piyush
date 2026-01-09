@@ -151,7 +151,11 @@ webhook URL: http://54.165.215.255:9000/hooks/refresh-site
   - **Webhook** - listen for incoming payloads and triggers refresh-container.sh
 
 - **What is NOT WORKING in this project**
-The pipeline from local computer to github is struggling
+The pipeline from local computer to github is struggling.
+After bunch of troubleshooting with Ms. Duncan and destroying the pipeline, we discuseed it's better to 
+start fresh, so I cloned a new folder and started fresh.
+Now the pipwline somewhat works.
+I see the update by git tag push on Actions, commit upadtes the guthub files, I see tag and webhook updates in dockerhub, but the web server doesn't update without running the docker pull, kill and push commands. 
 
 
 
