@@ -156,6 +156,9 @@ After bunch of troubleshooting with Ms. Duncan and destroying the pipeline, we d
 start fresh, so I cloned a new folder and started fresh.
 Now the pipwline somewhat works.
 I see the update by git tag push on Actions, commit upadtes the guthub files, I see tag and webhook updates in dockerhub, but the web server doesn't update without running the docker pull, kill and push commands. 
+It updates now with `sudo ./refresh-container.sh` command.
+When I run my webhook, hook rules doesn't satisfy.
+Today agin I did some debugging with Ms. Duncan and find out that webhook.service is not working properly but webhook itself is fine.
 
 
 
